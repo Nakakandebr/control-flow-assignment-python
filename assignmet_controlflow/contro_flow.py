@@ -1,13 +1,23 @@
 # Write a function that uses while, if and continue statements 
-# to print all the even numbers between 0 and 50. 
+# # to print all the even numbers between 0 and 50. 
 def even_numbers_btn_0_and_50():
     x=0
-    while x<50:
-        x+=1
+    while x<=50:
+       
         if x%2!=0:
+            x +=1
             continue
         print(x)
-    
+        x+=1
+
+# def even_numbers_btn_0_and_50():
+#     x=0
+#     while x<=50:
+#         x+=1
+#         if x%2!=0:
+#             continue
+#         print(x)
+        
 
 
 # Write a function that takes an integer argument 
@@ -19,7 +29,7 @@ def check_number_is_prime(number):
                 print(number,"Is not prime")
                 break
         else:
-            print(number, "Prime")
+            print(number, " is Prime")
 
 
 # Write a function that takes a list of integers as input 
@@ -38,7 +48,9 @@ def sum_of_all_even(numbers):
 # Write a function that takes any two integers as input, and
 #  prints the sum of all the numbers between the two integers (inclusive) that are divisible by 3.
 
-def  sum_of_all_numbers():
-    x=range(10,50)
-    for i in x:
-        if i%2==
+def  sum_of_all_numbers(x,y):
+    empty=[]
+    for i in range(x,y+1):
+        if i%3==0:
+            empty.append(i)
+    print(empty)
